@@ -16,7 +16,6 @@ final class UserListInteractor: UserListViewOutput {
     /// Presenter.
     var presenter: UserListInteractorOutput!
     
-    
     // MARK:- UserListViewOutput Conformance
     
     func getUserListApiCall()  {

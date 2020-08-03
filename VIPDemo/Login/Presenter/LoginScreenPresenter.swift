@@ -14,8 +14,6 @@ final class LoginScreenPresenter: LoginScreenInteractorOutput {
     // MARK: - Properties
     
     /// LoginScreen View.
-    var view: LoginScreenView?
-    
-   
+    weak var view: LoginScreenView?
     
 }

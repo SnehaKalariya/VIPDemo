@@ -12,9 +12,6 @@ import UIKit
 final class LoginScreenRouter {
 
     // MARK: - Properties
-
-    /// The dependency manager.
-    let dependencyManager: DependencyManager
     
     /// Navigation controller.
     weak var navigationController: UINavigationController?
@@ -22,15 +19,6 @@ final class LoginScreenRouter {
     /// The view controller that will present other views.
     weak var viewController: UIViewController?
 
-    // MARK: - Init
-    
-    /// Create an instance of the router with its necessary dependencies.
-    ///
-    /// - Parameter dependencyManager: The dependency manager.
-    init(dependencyManager: DependencyManager) {
-        self.dependencyManager = dependencyManager
-    }
-    
     func routeToMainTabBar(viewController:LoginScreenViewController) {
         let mainTabbar = viewController.storyboard?.instantiateViewController(identifier: "MainTabBarController") as! MainTabBarController
         navigationController?.pushViewController(mainTabbar, animated: true)

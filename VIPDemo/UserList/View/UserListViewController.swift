@@ -72,10 +72,12 @@ final class UserListViewController: UIViewController, UserListView {
         present(alert, animated: true)
     }
     
-    
 }
 
 extension UserListViewController : UITableViewDataSource,UITableViewDelegate{
+    
+    // MARK: -Tableview DataDource, TableView Delegate
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         guard let displayModel = self.displayModel else {
             return 0
@@ -94,7 +96,5 @@ extension UserListViewController : UITableViewDataSource,UITableViewDelegate{
         let selectedData = self.displayModel!.data[indexPath.row]
         router.routeToUserDetails(selectedUserData: selectedData)
     }
-    
-    
     
 }

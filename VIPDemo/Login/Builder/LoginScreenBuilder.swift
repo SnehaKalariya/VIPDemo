@@ -58,6 +58,6 @@ final class LoginScreenBuilder: LoginScreenBuildable {
     }
     
     func buildRouter() -> LoginScreenRouter {
-        return LoginScreenRouter(dependencyManager: dependencyManager)
+        return LoginScreenRouter()
     }
 }

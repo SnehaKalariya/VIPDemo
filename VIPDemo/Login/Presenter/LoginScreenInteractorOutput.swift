@@ -11,5 +11,4 @@ import Foundation
 /// LoginScreen interactor output.
 protocol LoginScreenInteractorOutput {
 
-
 }

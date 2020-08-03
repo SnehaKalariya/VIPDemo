@@ -14,7 +14,7 @@ final class UserListPresenter: UserListInteractorOutput {
     // MARK: - Properties
     
     /// UserList View.
-    var view: UserListView?
+    weak var view: UserListView?
     
     func updatePresenterForTableData(displayModel: UserListResponseModel) {
         view?.reloadTableData(displayModel)

@@ -50,6 +50,6 @@ final class UserListBuilder: UserListBuildable {
     }
     
     private func buildRouter() -> UserListRouter {
-        return UserListRouter(dependencyManager: dependencyManager)
+        return UserListRouter()
     }
 }
